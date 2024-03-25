@@ -1,0 +1,126 @@
+[debug] [2024-03-23T16:53:25.775Z] : 
+[debug] [2024-03-23T16:53:25.779Z] : ----------------------------------------------------------------------
+[debug] [2024-03-23T16:53:25.781Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst init
+[debug] [2024-03-23T16:53:25.781Z] : CLI Version:  1.17.4
+[debug] [2024-03-23T16:53:25.783Z] : Platform:     linux
+[debug] [2024-03-23T16:53:25.784Z] : Node Version: v20.10.0
+[debug] [2024-03-23T16:53:25.785Z] : Time:         Sat Mar 23 2024 22:23:25 GMT+0530 (India Standard Time)
+[debug] [2024-03-23T16:53:25.786Z] : ----------------------------------------------------------------------
+[debug] [2024-03-23T16:53:25.787Z] : 
+[debug] [2024-03-23T16:53:28.041Z] : > authorizing via signed-in user option
+[debug] [2024-03-23T16:53:28.041Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.projects.ALL","Stratus.sdkop.CREATE","Stratus.sdkop.READ","ZohoCatalyst.project.import.CREATE"]
+[info] [2024-03-23T16:53:28.058Z] : 
+      ___  
+      \  \     ____           _             _                 _   
+   ___ \  \   / ___|   __ _  | |_    __ _  | |  _   _   ___  | |_ 
+  /  / /  /  | |      / _` | | __|  / _` | | | | | | | / __| | __|
+ /  / /__/   | |___  | (_| | | |_  | (_| | | | | |_| | \__ \ | |_ 
+ \  \         \____|  \__,_|  \__|  \__,_| |_|  \__, | |___/  \__|
+  \__\                                          |___/       
+
+You're about to initialize a Catalyst project in this directory:
+
+  /home/ukijaffna/project_final  card (1)/my-frontend
+
+[debug] [2024-03-23T16:53:28.102Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/orgs 
+
+[debug] [2024-03-23T16:53:29.491Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 23 Mar 2024 16:53:29 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=4ffacd9a-b494-47fa-bba5-7de8a23fc7b1;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4ffacd9a-b494-47fa-bba5-7de8a23fc7b1;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-03-23T16:53:29.527Z] : ℹ Setting up a new default project for this folder
+
+[debug] [2024-03-23T16:53:29.530Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project 
+
+[debug] [2024-03-23T16:53:29.913Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 23 Mar 2024 16:53:29 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=577c7aaf-35f9-4d0d-ab79-41b06fc1dfc4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=577c7aaf-35f9-4d0d-ab79-41b06fc1dfc4;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[error] [2024-03-23T18:21:24.104Z] : uncaughtException: setRawMode EIO
+Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:31)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1589:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] [2024-03-23T18:21:24.307Z] : ✖ An unexpected error has occurred.
+[debug] [2024-03-23T18:21:24.308Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (/usr/local/lib/node_modules/zcatalyst-cli/lib/errorOut.js:19:17)
+    at process.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/bin/catalyst.js:87:28)
+    at process.emit (node:events:526:35)
+    at process.processEmit [as emit] (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/signal-exit/index.js:199:34)
+    at process._fatalException (node:internal/process/execution:178:25)
+[debug] [2024-03-23T18:21:24.308Z] : Original Error: Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:31)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1589:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[debug] [2024-03-23T18:21:24.308Z] : Error Status: 500
+[info] [2024-03-23T18:21:24.308Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-03-23T18:21:24.309Z] : uncaughtException: write EIO
+Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:556:12)
+    at _write (node:internal/streams/writable:490:10)
+    at Writable.write (node:internal/streams/writable:494:10)
+    at Console.log (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] [2024-03-23T18:21:24.309Z] : ✖ An unexpected error has occurred.
+[debug] [2024-03-23T18:21:24.309Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (/usr/local/lib/node_modules/zcatalyst-cli/lib/errorOut.js:19:17)
+    at process.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/bin/catalyst.js:87:28)
+    at process.emit (node:events:526:35)
+    at process.processEmit [as emit] (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/signal-exit/index.js:199:34)
+    at process._fatalException (node:internal/process/execution:178:25)
+[debug] [2024-03-23T18:21:24.310Z] : Original Error: Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:556:12)
+    at _write (node:internal/streams/writable:490:10)
+    at Writable.write (node:internal/streams/writable:494:10)
+    at Console.log (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[debug] [2024-03-23T18:21:24.310Z] : Error Status: 500
+[info] [2024-03-23T18:21:24.310Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-03-23T18:21:24.311Z] : uncaughtException: write EIO
+Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:556:12)
+    at _write (node:internal/streams/writable:490:10)
+    at Writable.write (node:internal/streams/writable:494:10)
+    at Console.log (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] [2024-03-23T18:21:24.311Z] : ✖ An unexpected error has occurred.
+[debug] [2024-03-23T18:21:24.311Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (/usr/local/lib/node_modules/zcatalyst-cli/lib/errorOut.js:19:17)
+    at process.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/bin/catalyst.js:87:28)
+    at process.emit (node:events:526:35)
+    at process.processEmit [as emit] (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/signal-exit/index.js:199:34)
+    at process._fatalException (node:internal/process/execution:178:25)
+[debug] [2024-03-23T18:21:24.311Z] : Original Error: Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:556:12)
+    at _write (node:internal/streams/writable:490:10)
+    at Writable.write (node:internal/streams/writable:494:10)
+    at Console.log (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[debug] [2024-03-23T18:21:24.311Z] : Error Status: 500
+[info] [2024-03-23T18:21:24.311Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
