@@ -58,11 +58,11 @@ const TripList = () => {
                   <td style={{ fontSize: '1.9rem' }}>{trip.children}</td>
                   {/* <td style={{ fontSize: '1.9rem' }}>{trip.duration}</td> */}
                   <td style={{ fontSize: '1.9rem' }}>{trip.email}</td>
-                  <td style={{ fontSize: '1.9rem' }}>{trip.phoneNumber}</td>
-                  <td>
-                    <button onClick={() => handleEdit(trip._id)} style={{ fontSize: '1.2rem',color: 'blue' }}>Edit</button>
-                    <button onClick={() => handleDelete(trip._id)}style={{ fontSize: '1.2rem',color: 'red' }}>Delete</button>
-                  </td>
+                  {/* <td style={{ fontSize: '1.9rem' }}>{trip.phoneNumber}</td> */}
+                  {/* <td> */}
+                    {/* <button onClick={() => handleEdit(trip._id)} style={{ fontSize: '1.2rem',color: 'blue' }}>Edit</button> */}
+                    {/* <button onClick={() => handleDelete(trip._id)}style={{ fontSize: '1.2rem',color: 'red' }}>Delete</button> */}
+                  {/* </td> */}
                 </tr>
               ))}
             </tbody>
