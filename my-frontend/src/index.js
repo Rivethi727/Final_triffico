@@ -11,7 +11,7 @@ root.render(
   <BrowserRouter>
     <App />
     <ToastContainer /> 
-  </BrowserRouter>,
+  </BrowserRouter>
 );
 
 reportWebVitals();
