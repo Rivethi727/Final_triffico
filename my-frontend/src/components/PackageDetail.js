@@ -10,7 +10,7 @@ const PackageList = () => {
   useEffect(() => {
     const fetchPackages = async () => {
       try {
-        const response = await axios.get('http://localhost:4500/api/v1/getAll-packages');
+        const response = await axios.get(`${process.env.REACT_APP_URL}/api/v1/getAll-packages`);
         setPackages(response.data);
       } catch (error) {
         console.error('Error fetching packages:', error);

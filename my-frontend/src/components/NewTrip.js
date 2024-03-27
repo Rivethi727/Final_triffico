@@ -34,7 +34,7 @@ const NewTrip = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:4500/api/trips', {
+      const response = await axios.post(`${process.env.REACT_APP_URL}/api/trips`, {
         destination,
         checkInDate,
         checkOutDate,
