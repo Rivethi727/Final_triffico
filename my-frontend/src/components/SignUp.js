@@ -9,7 +9,7 @@ const Signup = () => {
 		firstName: "",
 		email: "",
 		password: "",
-    role:"user"
+    role:"user",
 	});
 	const [error, setError] = useState("");
 	const navigate = useNavigate();
