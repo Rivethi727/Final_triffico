@@ -11,7 +11,7 @@ const Header = () =>{
         const fetchUserData = async () => {
             try {
               if (email != null) {
-                const response = await fetch(`http://localhost:4500/api/v1/${email}`);
+                const response = await fetch(`${process.env.REACT_APP_URL}/api/v1/${email}`);
                 const data = await response.json();
                
                 localStorage.setItem("userId", data._id);

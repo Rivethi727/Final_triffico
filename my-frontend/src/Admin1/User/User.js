@@ -11,7 +11,7 @@ function Users() {
       const [data, setData] = useState([])
       const navigate = useNavigate()
       useEffect(()=> {
-        axios.get('http://localhost:4500/api/admin/users')
+        axios.get(`${process.env.REACT_APP_URL}/api/admin/users`)
         .then(res => {
             console.log(res);
           setData(res.data);
@@ -19,7 +19,7 @@ function Users() {
         .catch(err => console.log(err));
       }, [])
     const handleDelete = (id) => {
-        axios.delete('http://localhost:4500/api/admin/user/'+id)
+        axios.delete(`${process.env.REACT_APP_URL}/api/admin/user/`+id)
         .then(res => {
             console.log(res)
             navigate('/admin')

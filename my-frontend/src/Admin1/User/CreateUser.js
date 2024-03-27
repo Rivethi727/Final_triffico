@@ -8,7 +8,7 @@ function CreateUser() {
     const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:4500/api/admin1/users', { firstName, email, password })
+        axios.post('${process.env.REACT_APP_URL}/api/admin1/users', { firstName, email, password })
         .then(res => {
             console.log(res);
             navigate('/admin1');

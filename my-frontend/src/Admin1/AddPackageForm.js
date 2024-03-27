@@ -24,7 +24,7 @@ const EditPackage = () => {
   useEffect(() => {
     const fetchPackageDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:4500/api/v1/get-package/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_URL}/api/v1/get-package/${id}`);
         setPackageDetails(response.data);
         setFormData({
           packageName: response.data.packageName,
@@ -52,7 +52,7 @@ const EditPackage = () => {
     e.preventDefault();
 
     try {
-      await axios.put(`http://localhost:4500/api/v1/update-package/${id}`, formData);
+      await axios.put(`${process.env.REACT_APP_URL}/api/v1/update-package/${id}`, formData);
       alert('Package updated successfully');
       window.location.href = '/admin/packages';
     } catch (error) {

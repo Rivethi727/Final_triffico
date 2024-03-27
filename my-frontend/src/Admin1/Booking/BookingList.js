@@ -13,7 +13,7 @@ const AdminDashboard = () => {
 
   const fetchBookings = async () => {
     try {
-      const response = await axios.get('http://localhost:4500/api/bookings');
+      const response = await axios.get(`${process.env.REACT_APP_URL}/api/bookings`);
       setBookings(response.data);
       setLoading(false);
     } catch (error) {

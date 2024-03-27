@@ -9,7 +9,7 @@ function UpdateUser() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:4500/api/admin1/users/" + id);
+                const response = await axios.get("${process.env.REACT_APP_URL}/api/admin1/users/" + id);
                 console.log(response);
                 setName(response.data.name);
                 setEmail(response.data.email);

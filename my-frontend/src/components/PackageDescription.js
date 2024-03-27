@@ -87,7 +87,7 @@ const PackageDescription = () => {
     const headers = {
         "Content-Type": "application/json"
     }
-    return fetch('http://localhost:4500/api/v1/payment',{
+    return fetch(`${process.env.REACT_APP_URL}/api/v1/payment`,{
         method: 'POST',
         headers,
         body: JSON.stringify(body)
@@ -122,7 +122,7 @@ const [formData, setFormData] = useState({
 
   const checkUserId = async () => {
     try {
-      const response = await fetch(`http://localhost:4500/api/v1/check-user-orders/${userId}`);
+      const response = await fetch(`${process.env.REACT_APP_URL}/api/v1/check-user-orders/${userId}`);
       console.log(response)
       if (response.ok) {
         const data = await response.json();
@@ -146,7 +146,7 @@ const [formData, setFormData] = useState({
             ...formData,
             userId: userId,
           };
-        const response = await fetch('http://localhost:4500/api/v1/create-order', {
+        const response = await fetch(`${process.env.REACT_APP_URL}/api/v1/create-order`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -220,7 +220,7 @@ const handleFormSubmit = async (event) => {
   // You can now send 'formObject' and 'selectedHotel' to your server using fetch or any other method
   
   try {
-    const response = await fetch('http://localhost:4500/api/v1/create-booking', {
+    const response = await fetch(`${process.env.REACT_APP_URL}/api/v1/create-booking`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -242,7 +242,7 @@ const handleFormSubmit = async (event) => {
 
 const getPackageById = async () => {
   try {
-    const response = await fetch(`http://localhost:4500/api/v1/getUserById/${userId}`);
+    const response = await fetch(`${process.env.REACT_APP_URL}/api/v1/getUserById/${userId}`);
     if (response.ok) {
       const data = await response.json();
       console.log(data.checkOutDate)

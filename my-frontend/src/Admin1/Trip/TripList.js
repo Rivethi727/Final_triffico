@@ -14,7 +14,7 @@ const TripList = () => {
     // Fetch all trips when component mounts
     const fetchTrips = async () => {
       try {
-        const response = await axios.get('http://localhost:4500/api/trips');
+        const response = await axios.get(`${process.env.REACT_APP_URL}/api/trips`);
         setTrips(response.data);
       } catch (error) {
         console.error('Error fetching trips', error);

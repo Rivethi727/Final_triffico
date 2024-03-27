@@ -11,7 +11,7 @@ const PlacesList = () => {
 
   const fetchPackageDetails = async (packageId) => {
     try {
-      const response = await fetch(`http://localhost:4500/api/v1/getAll-packages/${packageId}`);
+      const response = await fetch(`${process.env.REACT_APP_URL}/api/v1/getAll-packages/${packageId}`);
       if (!response.ok) {
         throw new Error('Failed to fetch package details');
       }
